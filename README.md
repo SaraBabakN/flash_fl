@@ -26,24 +26,28 @@ With these observations, we present *federated lottery aware sparsity hunting* (
 
 # Run Code
 
-#clients=100 --num_users=100
-with 10 % participation ratio --frac=0.1
-non-IID data distribution with $\alpha=1$ (--alpha=1)
-target density (d) =0.05 --density=0.05
-#federated communication round = 600(--fl_round=600)
-
-* SPDST *
-```python main.py --dataset=cifar10 --experiment_type=spdst --num_users=100 --alpha=1 --density=0.05 --fl_rounds=600 --path={PATH_TO_CIFAR10}  ```
+* Total number of clients: 100 --> --num_users=100
+* 10 % participation ratio in stage 2 --> --frac=0.1
+* IID data distribution with $\alpha$ = 1 --> --alpha=1
+* Target parameter density (d): 0.05 --> --density=0.05
+* Federated round: 600 --> --fl_round=600
+* Algorithm: SPDST --> --experiment=spdst
 
 
+<div>
+  <button class="copy-button" onclick="copyToClipboard('code-to-copy')"></button>
+  <pre><code id="code-to-copy">python main.py --dataset=cifar10 --experiment_type=spdst --num_users=100 --alpha=1 --density=0.05 --fl_rounds=600 --path={PATH_TO_CIFAR10}</code></pre>
+</div>
+`
 
-#clients=100 --num_users=100
-IID data distribution with $\alpha=1000$ (--alpha=1000)
-target density (d) = 0.1 --density=0.1
-#federated communication round = 600(--fl_round=600)
-* JMWST *
+* 5 % participation ratio in stage 1 --> --init_frac=0.05
+* Local epoch in stage 1 = 10 --> --init_epoch=10
+* Algorithm: JMWST --> --experiment=jmwst
 
-```python main.py --dataset=cifar10 --experiment_type=jmwst --num_users=100 --alpha=1000 --density=0.1 --fl_rounds=600 --path={PATH_TO_CIFAR10}  ```
+<div>
+  <button class="copy-button" onclick="copyToClipboard('code-to-copy')"></button>
+  <pre><code id="code-to-copy">python main.py --dataset=cifar10 --experiment_type=jmwst --num_users=100 --alpha=1000 --density=0.1 --fl_rounds=600 --path={PATH_TO_CIFAR10} --init_frac=0.05</code></pre>
+</div>
 
 # Contact
 Please contact Sara Babakniya (babakniy@usc.edu) if you have any questions.
