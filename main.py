@@ -35,6 +35,7 @@ def start(parser):
     elif args.dataset == TINY:
         args.num_classes = 200
     args.lr_gamma = np.log(args.lr_end / args.lr_start)
+    args.lr = args.lr_start
     linear = '_linear' if not args.conv_only else ''
     data_name = args.dataset
     args.mask_key_path = f'keys/{args.model_type}{linear}_{data_name}_mask.pt'
