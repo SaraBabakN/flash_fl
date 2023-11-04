@@ -22,7 +22,7 @@ With these observations, we present \textit{federated lottery aware sparsity hun
 
 # Run Code
 
-- CIFAR-10 and SPDST
+- For the CIFAR-10 dataset, training algorithm SPDST, in 5% participating clients for stage 1 
 
 ```python main.py --alpha=1  --init_frac=0.05 --init_epoch=10 --experiment_type=spdst  ```
 
