@@ -53,7 +53,7 @@ With these observations, we present *federated lottery aware sparsity hunting* (
 Please contact Sara Babakniya (babakniy@usc.edu) if you have any questions.
 
 # Citation
-If you find our code or work useful, please consider citing our paper:
+If you find our code or work useful, please cite our paper:
 ```
 @article{
 babakniya2023revisiting,
