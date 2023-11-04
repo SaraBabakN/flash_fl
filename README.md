@@ -10,11 +10,14 @@ Please contact Sara Babakniya (babakniy@usc.edu) if you have any questions.
 # Citation
 If you find our code or work useful, please consider citing our paper:
 ```
-@inproceedings{
+@article{
+babakniya2023revisiting,
 title={Revisiting Sparsity Hunting in Federated Learning: Why does Sparsity Consensus Matter?},
 author={Sara Babakniya and Souvik Kundu and Saurav Prakash and Yue Niu and Salman Avestimehr},
-booktitle={n Transactions on Machine Learning Research},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
 year={2023},
 url={https://openreview.net/forum?id=iHyhdpsnyi},
+note={}
 }
 ```
